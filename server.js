@@ -13,3 +13,4 @@ new WebpackDevServer(webpack(config), {
 
   console.log('Listening at localhost:3000');
 });
+
