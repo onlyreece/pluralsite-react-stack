@@ -33,6 +33,7 @@ class MessageList extends React.Component {
     }
     
     render(){
+        debugger;
         var messageNodes = _.values(this.state.messages).map((message)=>{
             return (
                 <Message message={message.message} />

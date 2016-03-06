@@ -36,10 +36,8 @@ class App extends React.Component {
     }
     
     render(){
-        var view = (
-            <Login />
-        );
-        debugger;
+        var view = <Login />;
+
         if (this.props.user){
              view = (
                  <div>

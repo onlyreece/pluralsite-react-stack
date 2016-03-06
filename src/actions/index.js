@@ -3,9 +3,16 @@ import Firebase from 'firebase';
 import settings from '../config/secure.config.js'; 
 
 class Actions {
+    constructor(){
+        this.generateActions(
+            'channelsReceived',
+            'channelsFailed'
+        );
+    }
+    
     login(args){
         return (dispatch) => {
-            var firebasRef = new Firebase(settings.firebaseUrl);
+            var firebasRef = new Firebase(settings.firebaseRootUrl);
             firebasRef.authWithOAuthPopup("google", (error, user)=>{
                 if(error){
                     return;
