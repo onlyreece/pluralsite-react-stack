@@ -44,7 +44,6 @@ class ChannelList extends React.Component {
         var channelNodes = _(this.props.channels)
         .keys()
         .map((k)=>{
-            debugger;
             let channel = this.props.channels[k];
             return (
                 <Channel channel={channel} />

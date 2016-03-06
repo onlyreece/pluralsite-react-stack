@@ -6,7 +6,15 @@ class Actions {
     constructor(){
         this.generateActions(
             'channelsReceived',
-            'channelsFailed'
+            'channelsFailed',
+            'messagesReceived',
+            'messagesFailed',
+            'channelOpened',
+            'messagesLoading',
+            'sendMessage',
+            'messageSendSuccess',
+            'messageSendError',
+            'messageReceived'
         );
     }
     
